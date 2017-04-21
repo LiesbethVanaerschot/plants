@@ -1,0 +1,44 @@
+.section--triangle {
+    position: relative;
+
+    max-width: 160rem;
+    margin: 11rem auto 35rem auto;
+
+    &:before,
+    &:after {
+        content: '';
+
+        position: absolute;
+        left: 50%;
+
+        display: block;
+        width: 0;
+        height: 0;
+
+        border-left: 80rem solid transparent;
+        border-right: 80rem solid transparent;
+
+
+        transform: translate3d(-50%,0,0);
+    }
+
+    &:before {
+        top: -12rem;
+
+        border-bottom: 12rem solid $white;
+    }
+
+    &:after {
+        bottom: -12rem;
+
+        border-top: 12rem solid $white;
+    }
+}
+
+.bg--white {
+    background-color: $white;
+}
+
+.text--center {
+    text-align: center;
+}

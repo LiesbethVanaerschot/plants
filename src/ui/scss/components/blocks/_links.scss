@@ -1,0 +1,60 @@
+/* Links
+   ========================================================================== */
+
+a {
+    text-decoration: none;
+    color: $text-color;
+
+    transition: all .3s ease-in-out;
+
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+.link--filter {
+    position: relative;
+
+    display: inline-block;
+
+    font-family: $secondary-font--italic;
+
+    &:after {
+        content: '';
+
+        position: absolute;
+        bottom: -.2rem;
+
+        display: block;
+        width: 0;
+        height: .2rem;
+
+        background-color: $text-color;
+
+        transition: all .3s ease-in-out;
+    }
+
+    &.active {
+        color: $greyblue--darker;
+
+        &:after {
+            width: 100%;
+
+            background-color: $greyblue--darker;
+        }
+    }
+
+    @media (min-width: $screen-md-min) {
+        &:hover {
+
+            color: $greyblue--darker;
+
+            &:after {
+                width: 100%;
+
+                background-color: $greyblue--darker;
+            }
+        }
+    }
+}

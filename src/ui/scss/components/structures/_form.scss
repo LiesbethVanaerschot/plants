@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Structures - Form
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+
+.form-control {
+    width: 100%;
+    min-height: 4rem;
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+
+    border: .2rem solid $greyblue;
+    box-shadow: none;
+    border-radius: 0;
+
+    font-family: $secondary-font--italic;
+
+    &:focus {
+        background-color: $green--lightest;
+    }
+}

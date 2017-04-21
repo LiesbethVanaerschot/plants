@@ -1,0 +1,116 @@
+/* Homepage - background visuals
+   ========================================================================== */
+
+
+/* General
+   ========================================================================== */
+
+figure {
+    margin: 0;
+}
+
+.top-left-visual,
+.bottom-left-visual,
+.top-right-visual,
+.bottom-right-visual {
+    position: fixed;
+    z-index: -10;
+
+    transition: all .3s ease-in-out;
+
+    img {
+        min-width: 65rem;
+
+        transition: all .3s ease-in-out;
+    }
+}
+
+.top-left-visual {
+    top: -12rem;
+    left: -18rem;
+
+    img {
+        min-width: 80rem;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        top: -16rem;
+        left: -24rem;
+
+        img {
+            min-width: 110rem;
+        }
+    }
+}
+
+.bottom-left-visual {
+    bottom: -12rem;
+    left: -10rem;
+
+    opacity: .6;
+
+    transition: all .5s ease-in-out;
+
+    @media (min-width: $screen-xs-min) {
+        opacity: 1;
+    }
+
+    @media (min-width: $screen-lg-min) {
+        left: -14rem;
+        bottom: -15rem;
+
+        img {
+            min-width: 100rem;
+        }
+    }
+}
+
+.top-right-visual {
+    top: -10rem;
+    right: -10rem;
+
+    img {
+        min-width: 55rem;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        img {
+            min-width: 60rem;
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        img {
+            min-width: 80rem;
+        }
+    }
+}
+
+.bottom-right-visual {
+    bottom: -25rem;
+    right: -10rem;
+
+    opacity: .8;
+
+    transition: all .5s ease-in-out;
+
+    img {
+        min-width: 45rem;
+    }
+
+    @media (min-width: $screen-xs-min) {
+        opacity: 1;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        img {
+            min-width: 50rem;
+        }
+    }
+
+    @media (min-width: $screen-lg-min) {
+        img {
+            min-width: 70rem;
+        }
+    }
+}

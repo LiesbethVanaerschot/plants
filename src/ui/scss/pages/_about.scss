@@ -1,0 +1,100 @@
+/* Homepage - about
+   ========================================================================== */
+
+
+/* General
+   ========================================================================== */
+
+.about {
+    padding: 0 0 8rem 0;
+
+    text-align: center;
+
+    @media(min-width: $screen-xs-min) {
+        text-align: left;
+    }
+}
+
+.about__content__header__title {
+    position: relative;
+
+    display: inline-block;
+
+    text-align: center;
+}
+
+.about__content__text {
+    margin: 5rem 0 2.5rem 0;
+
+    font-family: $primary-font--light;
+    font-size: 1.6rem;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 2rem;
+    }
+}
+
+.about__content__skills__design__list__item,
+.about__content__skills__dev__list__item {
+    font-family: $secondary-font--italic;
+    font-size: 1.4rem;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 1.6rem;
+    }
+}
+
+.about__content__skills__dev__list__item {
+
+    @media(min-width: $screen-xs-min) {
+        float: left;
+        width: 50%;
+        padding-right: 1rem;
+    }
+}
+
+.about__content__extra {
+    margin-top: 5rem;
+}
+
+.about__content__extra__item {
+    position: relative;
+
+    min-height: 9.5rem;
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+
+    img {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        max-width: 6rem;
+
+        vertical-align: bottom;
+
+        transform: translate3d(-50%,0,0);
+    }
+
+    @media (min-width: $screen-xs-min) {
+        img {
+            left: 0;
+
+            transform: none;
+        }
+    }
+
+    @media (min-width: $screen-sm-min) {
+        text-align: left;
+    }
+}
+
+.about__content__cv {
+    margin-top: 3rem;
+}
+
+.about__content__cv__download__button {
+    vertical-align: baseline;
+    display: inline;
+}

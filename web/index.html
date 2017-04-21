@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liesbeth Vanaerschot</title>
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="frontend/css/style.min.css">
+    <!-- endinject -->
+
+</head>
+<body ng-app="lies_port">
+<div class="">
+    <figure class="top-left-visual">
+        <img src="frontend/img/plant-figure-LB.svg" />
+    </figure>
+    <figure class="top-right-visual">
+        <img src="frontend/img/plant-figure-RB.svg" />
+    </figure>
+    <figure class="bottom-left-visual">
+        <img src="frontend/img/plant-figure-LO.svg" />
+    </figure>
+    <figure class="bottom-right-visual">
+        <img src="frontend/img/plant-figure-RO.svg" />
+    </figure>
+    <main>
+        <header fading-scroll roll="header" class="main-header" ng-class="{bgfade:fadeBoolean}">
+            <a href="/" class="main-header__logo">
+                <img src="frontend/img/logo.svg" alt="logo liesbeth vanaerschot" class="main-header__logo__img">
+            </a>
+            <nav roll="navigation" class="main-header__nav">
+                <a du-scrollspy du-smooth-scroll class="main-header__nav__link" href="#about">about</a>
+                <a du-scrollspy du-smooth-scroll class="main-header__nav__link" href="#work">work</a>
+                <a du-scrollspy du-smooth-scroll class="main-header__nav__link" href="#contact">contact</a>
+            </nav>
+        </header>
+        <div class="content-wrapper">
+            <div class="">
+                <div class="greeting">
+                    <div fading-scroll class="greeting__content" ng-class="{fadeout:fadeBoolean}">
+                        <div class="container--small">
+                            <h1 class="greeting__content__title">Hello</h1>
+                            <p class="greeting__content__text">
+                                My name is Liesbeth, a creative webdesigner and
+                                developer. Do you want to know more? Please do not hesitate and take a further look.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about section--triangle bg--white" id="about">
+                    <div class="container--small">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="about__content">
+                                    <div class="about__content__header text--center">
+                                        <h2 class="about__content__header__title">about</h2>
+                                    </div>
+                                    <p class="about__content__text">
+                                        I am a 26 year old all-round creative based in Belgium.
+                                        After my education as an interior designer,
+                                        I have been developing a passion for the web.
+                                    </p>
+                                    <div class="about__content__skills">
+                                        <h3 class="about__content__skills__title">skills</h3>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="about__content__skills__design">
+                                                    <h4 class="about__content__skills__design__title">design</h4>
+                                                    <ul class="about__content__skills__design__list">
+                                                        <!--ng-repeat van maken?-->
+                                                        <li class="about__content__skills__design__list__item">Illustrator</li>
+                                                        <li class="about__content__skills__design__list__item">Photoshop</li>
+                                                        <li class="about__content__skills__design__list__item">InDesign</li>
+                                                        <li class="about__content__skills__design__list__item">Sketching</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <div class="about__content__skills__dev">
+                                                    <h4 class="about__content__skills__dev__title">development</h4>
+                                                    <ul class="about__content__skills__dev__list">
+                                                        <!--ng-repeat van maken?-->
+                                                        <li class="about__content__skills__dev__list__item">HTML5</li>
+                                                        <li class="about__content__skills__dev__list__item">CSS - CSS3 - SASS</li>
+                                                        <li class="about__content__skills__dev__list__item">JavaScript - jQuery</li>
+                                                        <li class="about__content__skills__dev__list__item">Gulp</li>
+                                                        <li class="about__content__skills__dev__list__item">AngularJS</li>
+                                                        <li class="about__content__skills__dev__list__item">NodeJS</li>
+                                                        <li class="about__content__skills__dev__list__item">PHP - Laravel - Symfony</li>
+                                                        <li class="about__content__skills__dev__list__item">Blade - Twig</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about__content__extra">
+                                        <!--ng-repeat van maken?-->
+                                        <h3 class="about__content__extra__title">Extra's</h3>
+                                        <div class="row">
+                                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                                <div class="about__content__extra__item">
+                                                    <img src="frontend/img/sushi.svg" alt="icon yummie food like sushi" class="icon icon--food">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                                <div class="about__content__extra__item">
+                                                    <img src="frontend/img/music.svg" alt="icon love music" class="icon icon--music">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                                <div class="about__content__extra__item">
+                                                    <img src="frontend/img/travel.svg" alt="icon like to travel" class="icon icon--travel">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                                <div class="about__content__extra__item">
+                                                    <img src="frontend/img/coffee.svg" alt="icon coffee, i love coffee" class="icon icon--coffee">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-2">
+                                                <div class="about__content__extra__item">
+                                                    <img src="frontend/img/plant.svg" alt="icon plants like cactusses or any other plant" class="icon icon--plants">
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4 col-md-2">
+
+                                            </div>
+                                        </div>
+                                        <!-- + interior furniture -->
+                                    </div>
+                                    <div class="about__content__cv">
+                                        <p class="about__content__cv__text">
+                                            Would you like to see my complete resumé?
+                                        </p>
+                                        <p class="about__content__cv__download">
+                                            Download it
+                                            <a href="" class="btn btn--primary btn--small about__content__cv__download__button">here</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="work section--triangle bg--white" id="work">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="work__content">
+                                    <div class="work__content__header text--center">
+                                        <h2 class="work__content__header__title">work</h2>
+                                    </div>
+                                    <div class="work__content__filters">
+                                        <div class="work__content__filters__link">
+                                            <a href="" class="link--filter active">everything</a>
+                                        </div>
+                                        <div class="work__content__filters__link">
+                                            <a href="" class="link--filter">web</a>
+                                        </div>
+                                        <div class="work__content__filters__link">
+                                            <a href="" class="link--filter">graphic</a>
+                                        </div>
+                                        <div class="work__content__filters__link">
+                                            <a href="" class="link--filter">fun</a>
+                                        </div>
+                                    </div>
+                                    <div class="work__content__items">
+                                        <a href="" class="work__content__item">
+                                            <div class="work__content__item__inner">
+                                                <div class="work__content__item__inner__hover">
+                                                    <span class="work__content__item__inner__hover__plus">
+                                                        <i class="work__content__item__inner__hover__plus__icon icon"></i>
+                                                    </span>
+                                                </div>
+                                                <img src="" alt="" class="work__content__item__inner__img">
+                                            </div>
+                                        </a>
+                                        <a href="" class="work__content__item">
+                                            <div class="work__content__item__inner">
+                                                <div class="work__content__item__inner__hover">
+                                                    <span class="work__content__item__inner__hover__plus">
+                                                        <i class="work__content__item__inner__hover__plus__icon icon"></i>
+                                                    </span>
+                                                </div>
+                                                <img src="" alt="" class="work__content__item__inner__img">
+                                            </div>
+                                        </a>
+                                        <a href="" class="work__content__item">
+                                            <div class="work__content__item__inner">
+                                                <div class="work__content__item__inner__hover">
+                                                    <span class="work__content__item__inner__hover__plus">
+                                                        <i class="work__content__item__inner__hover__plus__icon icon"></i>
+                                                    </span>
+                                                </div>
+                                                <img src="" alt="" class="work__content__item__inner__img">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact section--triangle bg--white" id="contact">
+                    <div class="container--small">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="contact__content">
+                                    <div class="contact__content__header text--center">
+                                        <h2 class="contact__content__header__title">contact</h2>
+                                    </div>
+                                    <div class="contact__content__intro">
+                                        <p class="contact__content__intro__q">
+                                            Do you like what you see?
+                                        </p>
+                                        <p class="contact__content__intro__a">
+                                            Don’t hesitate to contact me!
+                                        </p>
+                                    </div>
+                                    <form action="" class="contact__content__form">
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-sm-6">
+                                                    <input type="text" placeholder="Firstname" class="form-control">
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <input type="text" placeholder="Lastname" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <input type="email" placeholder="Email address" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <input type="text" placeholder="Subject" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <textarea class="form-control" name="tellme" id="" cols="30" rows="10" placeholder="Tell me!">
+
+                                                    </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group form-submit text--center">
+                                                <button class="btn btn--primary btn--icon">SEND</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pattern-fixed">
+        </div>
+    </main>
+</div>
+
+
+<!-- inject:js -->
+<script src="frontend/js/angular.js"></script>
+<script src="frontend/js/angular-animate.js"></script>
+<script src="frontend/js/angular-scroll.js"></script>
+<script src="frontend/js/app.js"></script>
+<script src="frontend/js/fadingScroll.directive.js"></script>
+<script src="frontend/js/folio.controller.js"></script>
+<!-- endinject -->
+</body>
+</html>

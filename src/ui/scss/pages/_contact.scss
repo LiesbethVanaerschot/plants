@@ -1,0 +1,25 @@
+/* Homepage - work
+   ========================================================================== */
+
+
+/* General
+   ========================================================================== */
+
+.contact {
+
+    margin: 11rem auto 0 auto;
+    padding-bottom: 8rem;
+
+    &:after {
+        display: none;
+    }
+}
+
+.contact__content__intro {
+    text-align: center;
+    font-family: $primary-font--light;
+
+    .contact__content__intro__q {
+        margin-bottom: 0;
+    }
+}

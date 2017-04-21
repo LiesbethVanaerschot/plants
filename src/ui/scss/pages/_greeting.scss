@@ -1,0 +1,85 @@
+/* Homepage - greeting
+   ========================================================================== */
+
+
+/* General
+   ========================================================================== */
+
+.greeting {
+    position: relative;
+
+    height: calc(100vh - 7.5rem);
+    min-height: 100%;
+
+    @media (min-width: $screen-sm-min) {
+        height: calc(100vh - 9.5rem);
+    }
+
+    @media (min-width: $screen-md-min) {
+        height: calc(100vh - 15.5rem);
+    }
+
+}
+
+.greeting__content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+
+    opacity: 1;
+
+    transform: translate3D(-50%, -20%, 0);
+
+    transition: all 2s ease-in-out;
+
+    &.fadeout {
+        opacity: 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        top: 50%;
+
+        transform: translate3D(-50%, -50%, 0);
+    }
+}
+
+.greeting__content__title {
+    margin: 0;
+
+    color: $white;
+    font-family: $secondary-font--bolditalic;
+    font-size: 8.5rem;
+    line-height: .8;
+
+    transition: all .3s ease-in-out;
+
+    @media (min-width: $screen-xs-min) {
+        font-size: 12rem;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        font-size: 21rem;
+    }
+}
+
+.greeting__content__text {
+    margin: 1rem 0 0 0;
+
+    font-family: $secondary-font--italic;
+    font-size: 1.5rem;
+    text-shadow: 0 0 .4rem rgba($white,.9);
+    //color: $white;
+
+    transition: all .3s ease-in-out;
+
+    @media (min-width: $screen-sm-min) {
+        margin: .5rem 0 0 0;
+
+        font-size: 1.6rem;
+        color: $text-color;
+    }
+
+    @media (min-width: $screen-md-min) {
+        font-size: 1.8rem;
+    }
+}

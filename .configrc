@@ -1,0 +1,53 @@
+{
+    "vars": {
+        "distPath": "web/frontend/",
+        "resourcesPath": "src/",
+        "nodeModulesPath": "node_modules/"
+    },
+
+    "project": {
+        "name": "PortLies"
+    },
+
+    "dist": {
+        "css": "<=distPath>css",
+        "js": "<=distPath>js",
+        "img": "<=distPath>img",
+        "fonts": "<=distPath>fonts",
+        "styleguide": "<=distPath>styleguide"
+    },
+
+    "scssFolder": "<=resourcesPath>ui/scss/",
+
+    "img": "<=resourcesPath>ui/img/**/*.{png,jpg,jpeg,gif,svg,webp}",
+    "fonts": "<=resourcesPath>ui/fonts/**/*.{eot,svg,ttf,woff,woff2}",
+    "html": "<=resourcesPath>views/**/*.html",
+    "scss": "<=resourcesPath>ui/scss/**/*.scss",
+    "css": "<=distPath>css/style.min.css",
+
+    "js": {
+        "app": "<=resourcesPath>ui/js/**/*.js",
+        "footer": [
+            "<=nodeModulesPath>angular/angular.js",
+            "<=nodeModulesPath>angular-animate/angular-animate.js",
+            "<=nodeModulesPath>angular-scroll/angular-scroll.js",
+            "<=resourcesPath>ui/js/**/*.js"
+        ],
+        "other": [
+
+        ],
+        "addAsync": "false"
+    },
+
+    "browserSupport": [
+	"last 2 versions",
+	"ie 9",
+	"ie 10",
+	"ie 11"
+    ],
+
+    "liveReloadFiles": [
+	"<=distPath>css/style.min.css",
+	"<=distPath>js/*.js"
+    ]
+}

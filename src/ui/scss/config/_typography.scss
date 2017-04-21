@@ -1,0 +1,69 @@
+/* Typography
+   ========================================================================== */
+
+/* General
+   ========================================================================== */
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+html, body {
+    font-family: $font-family--base;
+    font-size: 10px;
+    line-height: 1.4;
+    color: $text-color;
+
+    * {
+        font-size: 1.6rem;
+    }
+}
+
+/******* HEADERS *******/
+
+h2 {
+    position: relative;
+
+    display: inline-block;
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4rem;
+
+    &:after {
+        content: '';
+
+        position: absolute;
+        left: 50%;
+
+        width: 80%;
+        height: .5rem;
+        display: block;
+
+        background-color: $text-color;
+
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+h3 {
+    margin: 2rem 0 1rem 0;
+
+    font-size: 2.5rem;
+    font-family: $secondary-font--italic;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+h4 {
+    color: $text-color;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-family: $primary-font;
+    font-size: 1.8rem;
+}
+
+p + p {
+    margin-top: 0;
+}
